@@ -3,3 +3,8 @@ repositories:
     type: git
     url: https://github.com/ros-controls/control_msgs
     version: foxy-devel
+    
+  krabi-msgs:
+    type: git
+    url: https://github.com/VictorDubois/krabi-msgs
+    version: feature/ROS2
