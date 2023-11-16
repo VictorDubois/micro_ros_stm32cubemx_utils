@@ -25,6 +25,14 @@ void UTILS_NanosecondsToTimespec( int64_t llSource,
         pxDestination->tv_nsec += lCarrySec * ( long ) NANOSECONDS_PER_SECOND;
     }
 }
+/*
+ * Stolen from task.h
+ */
+typedef struct xTIME_OUT
+{
+	BaseType_t xOverflowCount;
+	TickType_t xTimeOnEntering;
+} TimeOut_t;
 
 int clock_gettime( int clock_id,
                    struct timespec * tp )
